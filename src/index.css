@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glass-card {
+  @apply bg-white bg-opacity-80 backdrop-blur-lg;
+}
+
+.glass-nav {
+  @apply bg-white bg-opacity-90 backdrop-blur-md;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-800 hover:bg-gray-200;
+  }
+}
+
+/* src/index.css */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.globe-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  background: #000;
+}
+
+/* Hide scrollbar but allow scrolling */
+.scrollable-content {
+  overflow-y: auto; /* Enables vertical scrolling */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer & Edge */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.scrollable-content::-webkit-scrollbar {
+  display: none;
+}
+
+.nav_full{
+  width: 100%;
+}

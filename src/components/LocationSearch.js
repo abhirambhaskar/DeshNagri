@@ -8,7 +8,7 @@ import Footer from './Footer';
 import MainContent from './MainContent';
 import AboutModal from './AboutModal';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://india-data.vercel.app/api';
 
 const LocationSearch = () => {
   // State management
